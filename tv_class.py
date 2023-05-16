@@ -46,5 +46,10 @@ class TV:
         if self.status and 1 <= volume_level >= 7:
             self.volume_level += 1
 
+    # volume down
+    def volume_up(self, volume_level):
+        if self.status and 1 <= volume_level >= 7:
+            self.volume_level -= 1
+
     
 
