@@ -8,7 +8,9 @@ class TV:
         self.status = status
 
     # turn on/off TV
-
+    def turn_on_TV(self):
+        self.status = True
+        
     # TV channel
 
     # TV volume
