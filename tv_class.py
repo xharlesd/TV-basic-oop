@@ -23,6 +23,8 @@ class TV:
             self.channel = channel
 
     # TV volume
+    def get_volume(self):
+        return self.volume_level
 
     # channel up or down
 
