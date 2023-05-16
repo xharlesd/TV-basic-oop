@@ -19,7 +19,7 @@ class TV:
     
     # Set TV channel
     def set_channel(self, channel):
-        if self.status and 1 <= channel >= 120:
+        if self.status and 1 <= channel <= 120:
             self.channel = channel
 
     # get TV volume
@@ -28,31 +28,32 @@ class TV:
 
     # Set TV volume
     def set_volume_level(self, volume_level):
-        if self.status and 1 <= volume_level >= 7:
+        if self.status and 1 <= volume_level <= 7:
             self.volume_level = volume_level
 
     # switch channel up 
     def channel_up(self, channel):
-        if self.status and 1 <= channel >= 120:
+        if self.status and 1 <= channel <= 120:
             self.channel += 1
 
     # switch channel down
     def channel_down(self, channel):
-        if self.status and 1 <= channel >= 120:
+        if self.status and 1 <= channel <= 120:
             self.channel -= 1
 
     # volume up
     def volume_up(self, volume_level):
-        if self.status and 1 <= volume_level >= 7:
+        if self.status and 1 <= volume_level <= 7:
             self.volume_level += 1
 
     # volume down
     def volume_up(self, volume_level):
-        if self.status and 1 <= volume_level >= 7:
+        if self.status and 1 <= volume_level <= 7:
             self.volume_level -= 1
 
 tv_1 = TV()
 tv_1.turn_on_TV()
 tv_1.set_channel(5)
 tv_1.set_volume_level(6)
-print("TV 1's channel is", tv_1.get_channel, "and volume level is", tv_1.get_volume_level)
+
+print("TV 1's channel is", tv_1.get_channel(), "and volume level is", tv_1.get_volume_level())
