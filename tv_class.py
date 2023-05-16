@@ -1,10 +1,11 @@
 class TV:
 
     # constructor
-    def __init__(self, channel = 1, volume_level = 1):
+    def __init__(self, channel = 1, volume_level = 1, status = False):
         # instance variables
         self.channel = channel
         self.volume_level = volume_level
+        self.status = status
 
     # turn on/off TV
 
