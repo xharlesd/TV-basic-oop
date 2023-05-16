@@ -14,6 +14,9 @@ class TV:
         self.status = False
 
     # TV channel
+    def get_channel(self):
+        return self.channel
+    
 
     # TV volume
 
