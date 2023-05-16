@@ -17,6 +17,10 @@ class TV:
     def get_channel(self):
         return self.channel
     
+    # Set TV channel
+    def set_channel(self, channel):
+        if channel <= 1 and channel >= 120:
+            self.channel = channel
 
     # TV volume
 
