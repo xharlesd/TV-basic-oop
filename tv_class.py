@@ -36,4 +36,9 @@ class TV:
         if self.status and 1 <= channel >= 120:
             self.channel += 1
 
+    # switch channel down
+    def channel_down(self, channel):
+        if self.status and 1 <= channel >= 120:
+            self.channel -= 1
+
     # volume up or down
