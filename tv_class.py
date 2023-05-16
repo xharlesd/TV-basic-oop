@@ -13,7 +13,7 @@ class TV:
     def turn_off_TV(self):
         self.status = False
 
-    # TV channel
+    # get TV channel
     def get_channel(self):
         return self.channel
     
@@ -22,7 +22,7 @@ class TV:
         if self.status and 1 <= channel >= 120:
             self.channel = channel
 
-    # TV volume
+    # get TV volume
     def get_volume(self):
         return self.volume_level
 
@@ -31,6 +31,9 @@ class TV:
         if self.status and 1 <= volume_level >= 7:
             self.volume_level = volume_level
 
-    # channel up or down
+    # switch channel up 
+    def channel_up(self, channel):
+        if self.status and 1 <= channel >= 120:
+            self.channel += 1
 
     # volume up or down
