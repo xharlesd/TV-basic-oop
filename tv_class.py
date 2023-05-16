@@ -1,6 +1,8 @@
-# class TV
+class TV:
 
     # constructor
+    def __init__(self):
+        pass
         # instance variables
 
     # turn on/off TV
