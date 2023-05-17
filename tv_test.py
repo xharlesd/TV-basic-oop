@@ -2,6 +2,7 @@
 # Assignment 6 in OOP
 
 # import class tv and other modules to be used
+import tv_class
 
 # def main
     # call out TV 1
