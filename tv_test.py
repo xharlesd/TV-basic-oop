@@ -38,3 +38,5 @@ label2.grid(padx= 35)
 tv_1()
 tv_2()
 gui.mainloop()
+
+# FINAL
