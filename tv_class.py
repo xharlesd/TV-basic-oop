@@ -52,18 +52,3 @@ class TV:
     def volume_down(television, volume_level):
         if television.status and 1 <= volume_level <= 7:
             television.volume_level -= 1
-
-# test run
-tv_1 = TV()
-tv_1.turn_on_TV()
-tv_1.set_channel(5)
-tv_1.set_volume_level(6)
-
-print("TV 1's channel is", tv_1.get_channel(), "and volume level is", tv_1.get_volume_level())
-
-tv_2 = TV()
-tv_2.turn_on_TV()
-tv_2.set_channel(7)
-tv_2.set_volume_level(7)
-
-print("TV 2's channel is", tv_2.get_channel(), "and volume level is", tv_2.get_volume_level())
