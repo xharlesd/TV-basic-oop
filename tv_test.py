@@ -4,22 +4,26 @@
 # import class tv and other modules to be used
 from tv_class import TV
 from tkinter import *
+from tkinter import messagebox
 
 def tv_1():
-    tv_1 = TV()
-    # TV 1 method
-    tv_1.turn_on_TV()
-    tv_1.set_channel(5)
-    tv_1.set_volume_level(6)
-    output = "TV 1's channel is " + str(tv_1.get_channel()) + " and volume level is " + str(tv_1.get_volume_level())
-    label1.config(text = output)
+    try:
+        tv_1 = TV()
+        # TV 1 method
+        tv_1.turn_on_TV()
+        tv_1.set_channel(7)
+        tv_1.set_volume_level(9)
+        output = "TV 1's channel is " + str(tv_1.get_channel()) + " and volume level is " + str(tv_1.get_volume_level())
+        label1.config(text = output)
+    except:
+        messagebox.showerror('Error Encountered', 'Error: Please enter a valid input!')
     
 def tv_2():
     tv_2 = TV()
     # TV 2 methods
     tv_2.turn_on_TV()
-    tv_2.set_channel(6)
-    tv_2.set_volume_level(7)
+    tv_2.set_channel(7)
+    tv_2.set_volume_level(8)
     output = "TV 2's channel is " + str(tv_2.get_channel()) + " and volume level is " + str(tv_2.get_volume_level())
     label2.config(text = output)
 
