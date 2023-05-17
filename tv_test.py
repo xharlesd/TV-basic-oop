@@ -3,6 +3,7 @@
 
 # import class tv and other modules to be used
 from tv_class import TV
+from tkinter import *
 
 # def main
 def main():
@@ -18,5 +19,8 @@ def main():
     # call out TV 2
     # methods for TV 2
 
-main()
+window = Tk()  # Create an instance of tkinter frame or window
+window.title("Test TV")  # Title of the Window
+window.config(bg = "#D8F9FF")
 
+window.mainloop()
